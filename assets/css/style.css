@@ -21,13 +21,31 @@ h2{
     font-weight: 400;
     margin: 10px 0;
 }
-#warpper {
-	
-}
+/* Common */
 
 .clear{
 	clear: both;
 }
+
+.row {
+	margin-left: -8px;
+	margin-right: -8px;
+}
+
+.col {
+	float: left;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.col-half{
+	width: 50%;
+}
+
+.col-third{
+	width: 33.3333%;
+}
+/* main */
 #header {
 	width: 100%;
 	height: 46px;
@@ -177,8 +195,6 @@ h2{
 }
 
 #content .member-item{
-	float: left;
-	width: 33.333%;
 	text-align: center;
 }
 
@@ -232,14 +248,8 @@ h2{
 }
 
 .place-list{
-	margin: -16px;
-    padding: 45px 8px;
-}
-
-.place-item{
-	float: left;
-	width: 33.333%;
-	padding: 0 8px;
+	margin-top: 32px;
+	margin-bottom: 48px;
 }
 
 .place-img{
