@@ -297,6 +297,7 @@ h2{
 	background-color: #ccc;
 }
 
+/* Modal */
 .modal {
     position: fixed;
     top: 0;
@@ -379,6 +380,12 @@ h2{
 .modal-help a{
 	color: #2196f3;
 }
+
+/* Contact */
+.icon{
+	padding-right: 10px;
+}
+
 #footer {
 	
 }
