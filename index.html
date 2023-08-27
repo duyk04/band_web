@@ -60,7 +60,6 @@
                         <p class="member-name">Name</p>
                         <img  src="/band_web/assets/img/bandmember.jpg" alt="" class="member-img" >
                     </div>
-                    <div class="clear"></div>
                 </div>          
             </div>
             <!-- Tuor-section -->
@@ -103,36 +102,37 @@
                                     <button href="#" class="place-buy-btn js-buy-ticket">Buy tickets</button>
                                 </div>
                             </div>
-                            <div class="clear"></div>
                         </div>  
                 </div>
             </div> 
             <!-- Contac-section -->
-            <div class="content-section">
+            <div class="content-section" id="contact">
                 <h2 class="section-heading">CONTACT</h2>
                 <i class="section-sub-heading">Fan? Drop a note!</i>
-                <div class="row">
-                    <div class="col col-half">
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
                         <p><i class="ti-location-pin icon">Chicago, US</i></p>
                         <p><i class="ti-mobile icon">Phone: +00151515</i></p>
                         <p><i class="ti-email icon">Email: mail@mail.com</i></p>
                     </div>
-                    <div class="col col-half">
+                    <div class="col col-half contact-form">
                         <form action="">
-                            <div class="row">
+                            <div class="row ">
                                 <div class="col col-half">
-                                    <input type="text" name="" placeholder="Name" id="" class="from-control">
+                                    <input type="text" name="name" placeholder="Name" required id="" class="form-control">
                                 </div>
                                 <div class="col col-half">
-                                    <input type="email" name="" placeholder="Email" id="" class="from-control">
+                                    <input type="email" name="email" placeholder="Email" required id="" class="form-control">
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row mt-8">
                                 <div class="col col-full">
-                                    <input type="text" name="" placeholder="Message" id="" class="from-control">
+                                    <input type="text" name="message" placeholder="Message" required id="" class="form-control">
                                 </div>
                             </div>
-                            <input type="submit" value="SEND">
+                            <div>
+                                <input type="submit" value="SEND" class="contact-submit mt-16">
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -143,36 +143,39 @@
         </div>
 
     </div>
-    <div class="modal">
-        <div class="modal-container">
-            <div class="modal-close">
-                <i class="ti-close"></i>
+    <div class="modal"> 
+        <form action="">
+            <div class="modal-container">
+                <div class="modal-close">
+                    <i class="ti-close"></i>
+                </div>
+                <div class="modal-header">
+                    <i class="ti-bag"></i>
+                    Tickets
+                </div>
+                <div class="modal-body">
+                    <label for="" class="modal-label">
+                        <i class="ti-shopping-cart"></i>
+                        Tickets, $15 per person
+                    </label>
+                    <input type="text" class="modal-input" name="Ticket" placeholder="How many?">
+    
+                    <label for="" class="modal-label">
+                        <i class="ti-user"></i>
+                        Send to
+                    </label>
+                    <input type="email" class="modal-input" name="email" placeholder="Enter email...">
+    
+                    <button id="modal-pay">
+                        PAY <i class="ti-check"></i>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <p class="modal-help">Need <a href="#" class="help">help</a></p>
+                </div>
             </div>
-            <div class="modal-header">
-                <i class="ti-bag"></i>
-                Tickets
-            </div>
-            <div class="modal-body">
-                <label for="" class="modal-label">
-                    <i class="ti-shopping-cart"></i>
-                    Tickets, $15 per person
-                </label>
-                <input type="text" class="modal-input" placeholder="How many?">
-
-                <label for="" class="modal-label">
-                    <i class="ti-user"></i>
-                    Send to
-                </label>
-                <input type="email" class="modal-input" placeholder="Enter email...">
-
-                <button id="modal-pay">
-                    PAY <i class="ti-check"></i>
-                </button>
-            </div>
-            <div class="modal-footer">
-                <p class="modal-help">Need <a href="#" class="help">help</a></p>
-            </div>
-        </div>
+        </form>
+        
     </div> 
     <script src="/band_web/js/main.js"></script>
 </body>
