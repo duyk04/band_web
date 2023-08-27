@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Band</title>
+    <link rel="icon" type="image/x-icon" href="/band_web/assets/img/icon.webp">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
 </head>
@@ -11,7 +12,7 @@
     <div id="warpper">
         <div id="header">
             <ul id="nav">
-                <li><a href="#slider">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#content">Band</a></li>
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -22,9 +23,9 @@
                     </a>
                     
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -81,7 +82,7 @@
                                     <h3 class="place-heading">New York</h3>
                                     <p class="place-time">Fri 27 Nov 2016</p>
                                     <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button href="#" class="place-buy-btn js-buy-ticket">Buy tickets</button>
+                                    <button href="#" class="btn js-buy-ticket">Buy tickets</button>
                                 </div>
                             </div>
                             <div class="col col-third">
@@ -90,7 +91,7 @@
                                     <h3 class="place-heading">New York</h3>
                                     <p class="place-time">Fri 28 Nov 2016</p>
                                     <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button href="#" class="place-buy-btn js-buy-ticket">Buy tickets</button>
+                                    <button href="#" class="btn js-buy-ticket">Buy tickets</button>
                                 </div>
                             </div>
                             <div class="col col-third">
@@ -99,12 +100,45 @@
                                     <h3 class="place-heading">New York</h3>
                                     <p class="place-time">Fri 29 Nov 2016</p>
                                     <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button href="#" class="place-buy-btn js-buy-ticket">Buy tickets</button>
+                                    <button href="#" class="btn js-buy-ticket">Buy tickets</button>
                                 </div>
                             </div>
                         </div>  
                 </div>
             </div> 
+            <form action="">
+                <div class="modal"> 
+                    <div class="modal-container">
+                            <div class="modal-close">
+                                <i class="ti-close"></i>
+                            </div>
+                            <div class="modal-header">
+                                <i class="ti-bag"></i>
+                                Tickets
+                            </div>
+                            <div class="modal-body">
+                                <label for="" class="modal-label">
+                                    <i class="ti-shopping-cart"></i>
+                                    Tickets, $15 per person
+                                </label>
+                                <input type="text" class="modal-input" name="Ticket" placeholder="How many?">
+                
+                                <label for="" class="modal-label">
+                                    <i class="ti-user"></i>
+                                    Send to
+                                </label>
+                                <input type="email" class="modal-input" name="email" placeholder="Enter email...">
+                
+                                <button id="modal-pay">
+                                    PAY <i class="ti-check"></i>
+                                </button>
+                            </div>
+                            <div class="modal-footer">
+                                <p class="modal-help">Need <a href="#" class="help">help</a></p>
+                            </div>
+                    </div>    
+                </div> 
+            </form>
             <!-- Contac-section -->
             <div class="content-section" id="contact">
                 <h2 class="section-heading">CONTACT</h2>
@@ -131,52 +165,32 @@
                                 </div>
                             </div>
                             <div>
-                                <input type="submit" value="SEND" class="contact-submit mt-16">
+                                <input type="submit" value="SEND" class="mt-16 pull-right btn">
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+        <!--Begin-Contac-section -->
+        <div class="map-section">
+            <img src="/band_web/assets/img/map.jpg" alt="map">
+        </div>
         <div id="footer">
-
+            <div class="socials-list">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter-alt"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                <p>Powered by <a href="https://www.w3schools.com/">w3.css</a></p>
+            </div>
         </div>
 
     </div>
-    <div class="modal"> 
-        <form action="">
-            <div class="modal-container">
-                <div class="modal-close">
-                    <i class="ti-close"></i>
-                </div>
-                <div class="modal-header">
-                    <i class="ti-bag"></i>
-                    Tickets
-                </div>
-                <div class="modal-body">
-                    <label for="" class="modal-label">
-                        <i class="ti-shopping-cart"></i>
-                        Tickets, $15 per person
-                    </label>
-                    <input type="text" class="modal-input" name="Ticket" placeholder="How many?">
-    
-                    <label for="" class="modal-label">
-                        <i class="ti-user"></i>
-                        Send to
-                    </label>
-                    <input type="email" class="modal-input" name="email" placeholder="Enter email...">
-    
-                    <button id="modal-pay">
-                        PAY <i class="ti-check"></i>
-                    </button>
-                </div>
-                <div class="modal-footer">
-                    <p class="modal-help">Need <a href="#" class="help">help</a></p>
-                </div>
-            </div>
-        </form>
-        
-    </div> 
     <script src="/band_web/js/main.js"></script>
 </body>
 </html>
