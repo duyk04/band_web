@@ -23,9 +23,7 @@ h2{
 }
 /* Common */
 
-.clear{
-	clear: both;
-}
+
 .text-center{
 	text-align: center !important; 
 }
@@ -33,7 +31,17 @@ h2{
 	margin-left: -8px;
 	margin-right: -8px;
 }
-
+.row::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.mt-8{
+	margin-top: 8px;
+}
+.mt-16{
+	margin-top: 16px;
+}
 .col {
 	float: left;
 	padding-left: 8px;
@@ -93,9 +101,6 @@ h2{
 #nav li:hover .subnav{
 	display: block;
 }
-#nav li:hover a{
-
-}
 #nav .subnav {
 	display: none;
 	position:absolute;
@@ -151,9 +156,6 @@ h2{
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-weight: 400;
 	margin-bottom: 20px;
-}
-#slider .text-sub{
-	
 }
 
 #content {
@@ -385,7 +387,31 @@ h2{
 .icon{
 	padding-right: 10px;
 }
-
+.contact-content{
+	margin-top: 48px;
+}
+.contact-info{
+	font-size: 18px;
+	line-height: 1.5;
+}
+.contact-info i[class*="ti-"]:before{
+	width: 30px;
+    display: inline-block;
+}
+.contact-form{
+	font-size: 15px;
+}
+.contact-form .form-control{
+	padding: 10px;
+	border: 1px solid #ccc;
+	width: 100%;
+}
+.contact-submit{
+	background-color: #000;
+	color: #fff;
+	padding: 8px;
+	float: right;
+}
 #footer {
 	
 }
