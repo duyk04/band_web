@@ -6,6 +6,7 @@
 }
 
 html {
+	scroll-behavior: smooth;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -37,10 +38,10 @@ h2{
 	clear: both;
 }
 .mt-8{
-	margin-top: 8px;
+	margin-top: 8px !important;
 }
 .mt-16{
-	margin-top: 16px;
+	margin-top: 16px !important;
 }
 .col {
 	float: left;
@@ -58,6 +59,22 @@ h2{
 
 .col-full{
 	width: 100%;
+}
+.btn{
+	color: #fff;
+    background-color: #000;
+    margin: 0 0 6px;
+    padding: 10px 16px;
+    display: inline-block;
+    text-decoration: none;
+	border: none;
+}.btn:hover{
+	color: #000;
+	cursor: pointer;
+	background-color: #ccc;
+}
+.pull-right{
+	float: right;
 }
 /* main */
 #header {
@@ -165,7 +182,7 @@ h2{
 
 #content .content-section {
 	max-width: 800px;
-	padding:64px 16px 64px 16px;
+	padding:64px 0px 112px;
 	margin-left: auto;
 	margin-right: auto;
 	box-sizing: inherit;
@@ -253,7 +270,6 @@ h2{
 
 .place-list{
 	margin-top: 32px;
-	margin-bottom: 48px;
 }
 
 .place-img{
@@ -286,19 +302,6 @@ h2{
 	margin: 15px 0;
 	line-height: 1.4;
 }
-
-.place-buy-btn{
-	color: #fff;
-    background-color: #000;
-    margin: 0 0 6px;
-    padding: 10px 16px;
-    display: inline-block;
-    text-decoration: none;
-}.place-buy-btn:hover{
-	color: #000;
-	background-color: #ccc;
-}
-
 /* Modal */
 .modal {
     position: fixed;
@@ -406,16 +409,34 @@ h2{
 	border: 1px solid #ccc;
 	width: 100%;
 }
-.contact-submit{
-	background-color: #000;
-	color: #fff;
-	padding: 8px;
-	float: right;
+.map-section img{
+	width: 100%;
 }
 #footer {
-	
+	padding: 64px 16px;
+	text-align: center;
 }
 
+#footer .socials-list{
+	font-size: 24px;
+}
+
+#footer .socials-list a{
+	color: rgba(0,0,0,0.6);
+	text-decoration: none;
+}
+
+#footer .copyright a:hover,
+#footer .socials-list a:hover{
+	color: rgba(0,0,0,0.4);
+}
+#footer .copyright{
+	margin-top: 15px;
+	color: rgba(0,0,0,0.6);
+}
+#footer .copyright a{
+	color: rgba(0,0,0,0.6);
+}
 @keyframes modalfadein {
 	from{
 		opacity: 0;
